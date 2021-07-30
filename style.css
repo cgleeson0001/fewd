@@ -4,6 +4,148 @@
     font-family: sans-serif;
 }
 
+nav{
+    background-color: rgb(92, 90, 90);
+}
+nav ul{
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li:hover{
+    background-color: rgb(228, 225, 225);
+    transition: 0.9s;
+}
+@media only screen and (max-width: 767px) {
+    nav ul{
+        height: 230px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/*--------------------------------*/
+
+body {
+    font-family: "Lato", sans-serif;
+    color: black;
+    margin: 0;
+  }
+  
+  .contact-banner {
+    background-image: linear-gradient(
+      to right,
+      rgb(0, 114, 66) 0%,
+      rgb(4, 109, 91) 100%
+    );
+    color: white;
+    padding: 40px;
+  }
+  
+  .invalid {
+    border: 1px solid red;
+  }
+  
+  .mb-2 {
+    margin-bottom: 20px;
+  }
+  
+  .mb-4 {
+    margin-bottom: 40px;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  .contact-description {
+    margin-bottom: 40px;
+  }
+  
+  input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 280px;
+    border: 1px solid rgb(0, 114, 66);
+    font-size: 18px;
+    outline: none;
+    color: #333;
+  }
+  
+  .form-control {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  
+  label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .hide {
+    opacity: 0;
+  }
+  
+  textarea {
+    width: 560px;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    height: 200px;
+    font-size: 18px;
+  }
+  
+  button {
+    color: black;
+    padding: 20px;
+    border: 1px solid rgb(0, 114, 66);
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: rgb(0, 114, 66);
+  }
+  
+  button:hover {
+    background-image: linear-gradient(
+      to right,
+      rgb(0, 114, 66) 0%,
+      rgb(4, 109, 91) 100%
+    );
+    color: white;
+  }
+  
+  form {
+    padding: 40px;
+  }
+  
+  hr {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 1px;
+    border: none;
+    background-color: rgb(0, 114, 66);
+  }
+  /*-------------------------*/
 .wrapper{
     display: flex;
     width: 100%;
@@ -45,18 +187,6 @@
     margin-bottom: 50px;
 }
 
-button{
-    width: 200px;
-    border: none;
-    background: #808080;
-    box-shadow: 0px 10px 10px 1px rgba(red, green, blue, alpha);
-    padding: 25px 0;
-    color: #fff;
-    outline: none;
-    font-size: 12px;
-    cursor: pointer;   
-}
-
 .slider{
     width: 100%;
     height: 60%;
@@ -93,23 +223,13 @@ hr{
     width: 270px;
     height: 1px;
     background: red;
-    margin: 20px 0 30px;
+    margin: 20px 0 40px;
+   
+
 }
 
-.controller{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.controller img{
-    width: 90px;
-    cursor: pointer;
-}
-
-.vertical-line{
-    width: 2px;
-    height: 30px;
-    background: red;
+.form{
+    font-family: sans-serif;
 }
 
 /* small device media query*/

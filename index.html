@@ -11,6 +11,14 @@
   <title>Banksy Art Blog</title>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
   <div class="wrapper">
     <div class="left-col">
 
@@ -22,8 +30,13 @@
         <h1>About Banksy</h1>
         <p>Banksy is a pseudonymous England-based street artist, 
           political activist, and film director whose real name and 
-          identity remain unconfirmed and the subject of speculation.</p>
-        <button type="button">SEND</button>
+          identity remain unconfirmed and the subject of speculation.
+          <br>
+          <br>
+          Aliquam diam ligula, lacinia eget commodo vitae, semper ac lorem.
+          Integer vel libero fermentum, auctor nulla nec, hendrerit ipsum.
+          Nulla nec risus eu risus sodales aliquet a ut sem.</p>
+       
       </div>
 
     </div>
@@ -32,55 +45,53 @@
       <div class="slider">
         <img src="images/girl_with_balloon.jpg" id="Slide">
       </div>
-      <div class="slider-content">
-
-        <div class="controller">
-          <img src="images/left.png" id="BackBtn">
-          <div class="vertical-line"></div>
-          <img src="images/right.png" id="NextBtn">
-        </div>
 
         <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
         <hr>
-        <p>Aliquam diam ligula, lacinia eget commodo vitae, semper ac lorem.<br>
-          Integer vel libero fermentum, auctor nulla nec, hendrerit ipsum.<br> 
-          Nulla nec risus eu risus sodales aliquet a ut sem. Aenean efficitur nulla vel accumsan venenatis. 
-          Nullam nibh enim, euismod id velit vitae, finibus elementum velit.</p>
-     
-        </div>
 
+        <div class="form">
+        <p>Get in Contact with Banksy</p>
+        <br>
+        </div>
+        <div id="error"></div>
+        
+    <form name="contact-form">
+      <div class="form-control">
+        <label>Full Name</label>
+        <input name="name"
+          placeholder="First and Last Name" />
+        <div class="error hide">Name is required</div>
+      </div>
+
+      <div class="form-control">
+        <label>Email</label>
+        <input
+          name="email"
+          placeholder="e.g. your_email@example.com"
+        />
+        <div class="error hide">Email is invalid</div>
+      </div>
+
+      <div class="form-control">
+        <label>Phone</label>
+        <input name="phone"
+        ></input>
+        <div class="error hide">Phone is invalid</div>
+      </div>
+
+      <div class="form-control">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <div class="error hide">Message is required</div>
+      </div>
+
+      <hr />
+
+      <button type="submit">SUBMIT FORM</button>
+    </form>
       
   </div>
 
-<script>
-  var Slide = document.getElementByID("Slide");
-  var BackBtn = document.getElementByID("BackBtn");
-  var NextBtn = document.getElementByID("NextBtn");
-
-  var slideimages = new Array(
-          "images/girl_with_balloon.jpg",
-          "images/pic-2.jpg",
-          "images/pic-3.jpg",
-          "images/pic-4.png",
-      );
-  let i = 0;
-
-  NextBtn.onclick = function(){
-    if(i < 3){
-      Slide.src = slideimages[i+1];
-          i++;
-      }
-  }
-
-  BackBtn.onclick = function(){
-    if(i > 0){
-      Slide.src = slideimages[i+1];
-          i--;
-      }
-  }
-</script>
-
-
-
+  <script src="script.js"></script>
 </body>
 </html>
